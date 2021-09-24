@@ -2,10 +2,10 @@
 //'0' - '9' => 48-57 in ASCII;;;; 'A' - 'Z' => 65-90 in ASCII;;;; 'a' - 'z' => 97-122 in ASCII needed?
 //["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "~", "?", "/", ",", "|", "{", "}", "[", "]", "<", ">", ".", ":", ";", "`"]; 
+var upperCase = ["ABCDEFGHIJKLMNOPRSTUVWXYZ"];
+var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
+var number = ["1234567890"];
+var special = ["~!@#$%^&*()_+{}:?><;."]; 
 var confirmLength = "";
 var confirmUpperCase;
 var confirmLowerCase;
