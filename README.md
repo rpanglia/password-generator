@@ -1,6 +1,6 @@
 # Password-Generator
 
-** This purpose of this project was to create an application that an employee can use to generate a random password based on criteria that they select via a series of prompts --in order to create a strong password that provides greater security.
+This purpose of this project was to create an application that an employee can use to generate a random password based on criteria that they select via a series of prompts --in order to create a strong password that provides greater security.
 
 For this project, the starter code was provided for HTML, CSS and JavaScript. I was required to make the appropriate additions to the Javascript code to ensure functionality matches the provided acceptance criteria (provided in a Given/When/Then approach). Please see the criteria below:
 
