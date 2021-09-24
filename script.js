@@ -40,7 +40,7 @@ function generatePassword() {
   console.log("Your password length is " + confirmLength);
 
   while(confirmLength <= 7 || confirmLength >= 129) {
-    window.alert("UH OH! Your password length MUST be between 8-128 characters. Please choose a number between 8 and 128.");
+    window.alert("UH OH! Your password length MUST be between 8-128 characters. Try again.");
     var confirmLength = window.prompt("How many characters would you like your password to contain? Please choose a number between 8 and 128.");
     }
 
@@ -54,16 +54,12 @@ function generatePassword() {
   var confirmNumber = window.confirm("Would you like to add numbers in your password (ex. 1,2,3...? Click 'OK' to confirm.");
   var confirmSpecial = window.confirm("Would you like to include special character's in your password (ex. !,@,#...)? Click 'OK' to confirm.");
 
+  if(confirmUpperCase === false && confirmLowerCase === false && confirmNumber === false & confirmSpecial === false) {
+    window.alert("You MUST choose at least one of the 4 password criteria.");
+    var confirmUpperCase = window.confirm("Would you like to include upper case letters in your password (ex. A,B,C...)? Click 'OK' to confirm.");
+    var confirmLowerCase = window.confirm("Would you like to include lower case letters in your password (ex. a,b,c...)? Click 'OK' to confirm.");
+    var confirmNumber = window.confirm("Would you like to add numbers in your password (ex. 1,2,3...? Click 'OK' to confirm.");
+    var confirmSpecial = window.confirm("Would you like to include special character's in your password (ex. !,@,#...)? Click 'OK' to confirm.");
+  } 
+  
 }
-
-
-
-
-
-
-/*
-function getRandomLower() {
-  return String.fromCharCode(console.log(Math.floor(Math.random() * 26) + 97));
-}
-console.log(getRandomLower());
-*/
