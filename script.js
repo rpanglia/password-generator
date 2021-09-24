@@ -44,7 +44,7 @@ function generatePassword() {
     var confirmLength = window.prompt("How many characters would you like your password to contain? Please choose a number between 8 and 128.");
     }
 
-  if(confirmLength >= 8 || confirmLength <=128) {
+    if(confirmLength >= 8 || confirmLength <=128) {
     window.alert("Your password will have " + confirmLength + " characters in total.");
     console.log("Your password length is " + confirmLength);
   }
@@ -60,6 +60,33 @@ function generatePassword() {
     var confirmLowerCase = window.confirm("Would you like to include lower case letters in your password (ex. a,b,c...)? Click 'OK' to confirm.");
     var confirmNumber = window.confirm("Would you like to add numbers in your password (ex. 1,2,3...? Click 'OK' to confirm.");
     var confirmSpecial = window.confirm("Would you like to include special character's in your password (ex. !,@,#...)? Click 'OK' to confirm.");
-  } 
-  
+        //how to loop lines 59-62 and clean up code????  also where to add console log for the above 4 lines??
+    }
+
+    var userPassword = [];
+
+    // use .concat to merge 2 or more arrays
+    
+    if(confirmUpperCase) {
+        userPassword = userPassword.concat(upperCase);
+    }
+
+    if(confirmLowerCase) {
+        userPassword = userPassword.concat(lowerCase);
+    }
+
+    if(confirmNumber) {
+        userPassword = userPassword.concat(number);
+    }
+
+    if(confirmSpecial) {
+        userPassword = userPassword.concat(special);
+    }
+
+    console.log(userPassword)
+
 }
+
+var finalPassword = [];
+
+
